@@ -12,7 +12,9 @@ import {OverviewKurseComponent} from './components/overview-kurse/overview-kurse
 import {OverviewWeekComponent} from './components/overview-week/overview-week.component';
 import {OverviewKurseamwochentagComponent} from './components/overview-kurseamwochentag/overview-kurseamwochentag.component';
 import {HomeComponent} from './components/home/home.component';
-import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import { NavbarComponent } from './navbar/navbar.component';
+import {NgbModule } from "@ng-bootstrap/ng-bootstrap";
+
 
 @NgModule({
   declarations: [
@@ -24,13 +26,14 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
     OverviewKurseComponent,
     OverviewWeekComponent,
     OverviewKurseamwochentagComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
-    HttpClientModule,
-    NgbModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
